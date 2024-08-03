@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prince</title>
+</head>
+<body>
+    <div class="canvas">
+        
+        <h1>check event scheme</h1>
+        <span class="button" id="grey"></span>
+        <span class="button" id="white"></span>
+        <span class="button" id="blue"></span>
+        <span class="button" id="yellow"></span>
+        <h2>
+          Try clicking on one of the colors above
+          <span>to know the event after clicking on Color</span>
+        </h2>
+      </div>
+      <style> 
+        .button {
+    width: 100px;
+    height: 100px;
+    border: solid black 2px;
+    display: inline-block;
+  }
+  
+  #grey {
+    background: grey;
+  }
+  
+  #white {
+    background: white;
+  }
+  #blue {
+    background: blue;
+  }
+  #yellow {
+    background: yellow;
+  }
+  
+      </style>
+    
+</body>
+<script> 
+// const buttons = document.querySelectorAll(".button")
+// buttons.forEach(function(button){
+//     console.log(button);
+//     button.addEventListener("click",function (e) {
+//         // console.log(e);//event 
+//         console.log("button clicked");
+        
+        
+//     },false);//false is default 
+//     // what we haive to study is
+//     // type,timestamp,defaultprevented
+//     // target,toElement,srcElement,currntTarget
+//     // clientX,clientY,screenX,sceenY
+//     // altkey,ctrlKey,shiftKey,KeyCode;
+
+// });
+
+
+
+// document.getElementById("grey").addEventListener("click",function(e){
+// console.log("grey clicked");
+// // e.stopPropagation();//isme bubble hokr uppr ke element ke pass nhi jayega 
+// //agr do event hoge to bss neenche wala hi kaam krega
+// },false)
+// //false will bubbling means propogation neeche se uppr hogi
+// //agr hum true krde to capturing hogi means top to bottom
+
+// document.getElementById("blue").addEventListener("click",function(e){
+//     console.log("blue is clicked ");
+    
+// })
+
+// e.preventDefault();//this will help to discard the deafult
+// //funtion and we want it to do what we define in the event section
+
+
+
+    const button = document.querySelector(".button");
+    
+    button.addEventListener("click", function (e) {
+        console.log(e.target);
+        // to remove
+        let removeIt = e.target;
+        removeIt.remove()
+        
+    })
+
+
+</script>
+</html>
