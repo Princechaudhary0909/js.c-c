@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prince</title>
+</head>
+<body>
+    <h1>
+        PRINCE started
+    </h1>
+    <button id="stop">STOP</button>
+</body>
+<script>
+    // setTimeout(function () 
+    // {
+    //     console.log("prince"); 
+    // }, 3000)//set time out se bs ek baar print hoga 
+    // set interval se ek time ke baad vo krta rhega
+    const sayPrince = () => {
+        console.log("prince");
+        
+    }
+    const changeText = () => {
+        document.querySelector("h1").innerHTML = "started again"
+    }
+    // setTimeout(changeText,3000)
+    setTimeout(sayPrince,3000);
+    //how we can stop it
+    //we must take it in an variable 
+     const a = setTimeout(changeText,3000)
+    // clearTimeout(a)
+
+
+
+    document.querySelector("#stop").addEventListener("click",() =>{
+       clearTimeout(a) 
+       console.log("STOP");
+       
+    });
+</script>
+</html>
