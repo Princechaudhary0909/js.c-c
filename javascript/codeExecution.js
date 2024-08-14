@@ -13,6 +13,6 @@ function three (){
     console.log("three");
     two()
 }
-one();
-two();
+// one();
+// two();
 three();
