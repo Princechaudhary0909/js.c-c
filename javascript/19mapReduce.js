@@ -58,7 +58,7 @@ let newnum = myNum.map((num ) => num*10)
 
 
 //#@##@#@#@# reduce used in shopping kart @#@#@##@#
-const number = [1,2,3,4]
+const number = [1,2,3,4,44,56,66]
 let result12 = number.reduce((accumulator,currentvalue) => {
     console.log(`acc value${accumulator} & current value is ${currentvalue}`);
     return accumulator + currentvalue;

@@ -37,6 +37,7 @@ jsuser.email = "prince@microsoft.com";
 console.log(jsuser);
 
 
+//in js function can be treated as a variable
 
 // to add function in object
 jsuser.greeting = function(){

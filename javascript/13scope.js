@@ -31,8 +31,12 @@ function interesting (num) {
     return num+1;
 }
 //interesting(4);
+//isme humne function ko declair kiya hai to isko hum phele
+// call kr skte hai
+// koi error nhi aayegi
 //addTwo(5)
-
+// but addtwo mein humne usko variable mein hold kiya hai so
+// hum usko phele call nhi kr skte
 const addTwo = function (num){
     return num+2;
 }

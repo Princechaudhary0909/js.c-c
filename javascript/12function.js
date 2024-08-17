@@ -55,7 +55,10 @@ function calculateCartPrice(...n1){
   return n1;
 
 }
-// console.log(calculateCartPrice(200,400,500));
+console.log(calculateCartPrice(200,400,500));
+// humne array milega so we can loop through it's values
+
+
 //we have rest operator for this problem(...)
 //3dot is rest operator
 
@@ -67,11 +70,12 @@ function handleObject(anyobject){
   console.log(`user name is ${anyobject.name} and age of user is ${anyobject.age}`);
 }
 handleObject(user);
-
+//anyobjects (koi bui naam de skte hai)allows to get ibjects as input 
 
 const newArray = [100,200,300,400]
 function array(getArray){
   return getArray[2];
 }
 console.log(array(newArray));
+// same goes for array
 

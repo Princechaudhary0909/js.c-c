@@ -4,7 +4,7 @@ const instaUser = new Object()
  instaUser.name = "prince",
  instaUser.IsLoggedIn = true
 
-//console.log(instaUser);
+// console.log(instaUser);
 
 const regularUser = {
     email: "prince22.com",
@@ -26,10 +26,10 @@ const obj2 = {
     3:"c",
     4:"d",
 }
-//const obj3 = Object.assign(obj1,obj2);
+// const obj3 = Object.assign(obj1,obj2);
 //const obj3 = Object.assign({} ,obj1,obj2);//empty array lelete hai so that usme value store ho jaye agr nhi lenge to sb obj1 mei n store hoga
 // we will be using this mostly
-const obj3 = {...obj1,...obj2}
+// const obj3 = {...obj1,...obj2}
 // console.log(obj3);
 
 //when values comes fron database
@@ -52,7 +52,7 @@ const user = [{
     email:"p@gmail.com"
 
 }]
-console.log(user[0]);
+// console.log(user[0]);
 
 // console.log(instaUser);
 // console.log(Object.keys(instaUser));//iska return type hoga ARRAY so baad mein isme loops lga skte hai baaki saare array ke operations use kr skte ahi
@@ -61,8 +61,8 @@ console.log(user[0]);
 
 //jb hum object mein loopthrough kr rhe hote hai to vo value exist nhi krti hai
 //so we can check that by kyoki crash ke chances hai
-console.log(instaUser.hasOwnProperty('IsLoggedIn'));
-console.log(instaUser.hasOwnProperty('IsLogged'));
+// console.log(instaUser.hasOwnProperty('IsLoggedIn'));
+// console.log(instaUser.hasOwnProperty('IsLogged'));
 
 
 

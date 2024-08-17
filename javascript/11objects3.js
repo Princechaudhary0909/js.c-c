@@ -1,4 +1,4 @@
-//DESTRUCTURING
+//DE-STRUCTURING
 const course = {
     coursename: "jshindi",
     coursefees: "1000",
@@ -26,9 +26,9 @@ navbar(company = "prince")
     "price":"free"
 }*/
 
-[
-    {},
-    {},
-    {}
+// [
+//     {},
+//     {},
+//     {}
    
-]
+// ]
