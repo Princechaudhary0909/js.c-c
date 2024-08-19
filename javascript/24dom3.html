@@ -1,0 +1,48 @@
+
+<!-- ISKO EK BAAR SHI SE REVISE KRO VIDEO NO 34  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style = "background-color: black; color: white;">
+    <ul class="container">
+        <li>java</li>
+        <li>c++</li>
+        <li>react</li>
+        <li>angular</li>
+    
+    </ul>
+</body>
+<script>
+   function addLanguage (langName) {
+        const li = document.createElement("li")
+li.innerHTML  = `${langName}`
+document.querySelector(".container").appendChild(li)
+    }
+    addLanguage("PYTHON")
+
+// real life mein isi kaam ko thoda optimise form mein ais ekrte hai
+
+    function addOptimiseLanguage(langName){
+        const li = document.createElement("li")
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector(".container").appendChild(li)
+    }
+    addOptimiseLanguage("golang")
+
+
+
+    // edit these values
+    // const seclang = document.querySelector("li:nth-child(2)")
+    // console.log(seclang);
+    
+    // const newli= document.createElement("li")
+    // newli.textContent = "MOJO"
+    // seclang.replaceWith(newli)
+</script>
+</html>
