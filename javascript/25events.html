@@ -49,13 +49,19 @@
 //     console.log(button);
 //     button.addEventListener("click",function (e) {
 //         // console.log(e);//event 
+//         // console.log(e.timeStamp);
+//         // console.log(e.srcElement);
+//         console.log(e.target)
 //         console.log("button clicked");
+//         let removebutton = e.target;
+//         removebutton.remove()
+         
         
         
 //     },false);//false is default 
 //     // what we haive to study is
 //     // type,timestamp,defaultprevented
-//     // target,toElement,srcElement,currntTarget
+//     // target,toElement,srcElement(source element),currntTarget
 //     // clientX,clientY,screenX,sceenY
 //     // altkey,ctrlKey,shiftKey,KeyCode;
 
@@ -77,7 +83,7 @@
 // })
 
 // e.preventDefault();//this will help to discard the deafult
-// //funtion and we want it to do what we define in the event section
+// //funtion ande want it to do what we define in the event section
 
 
 
@@ -85,9 +91,9 @@
     
     button.addEventListener("click", function (e) {
         console.log(e.target);
-        // to remove
-        let removeIt = e.target;
-        removeIt.remove()
+    //     // to remove
+    //     let removeIt = e.target;
+    //     removeIt.remove()
         
     })
 

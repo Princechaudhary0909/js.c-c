@@ -21,20 +21,23 @@
         console.log("prince");
         
     }
-    const changeText = () => {
-        document.querySelector("h1").innerHTML = "started again"
-    }
+    // const changeText = () => {
+    //     document.querySelector("h1").innerHTML = "started again"
+    // }
     // setTimeout(changeText,3000)
-    setTimeout(sayPrince,3000);
+    // setTimeout(sayPrince,3000);
+    // setInterval(sayPrince,3000);
     //how we can stop it
     //we must take it in an variable 
-     const a = setTimeout(changeText,3000)
+    //  const a = setTimeout(changeText,3000)
+    //  const a1 = setTimeout(sayPrince,1000)
+    const a1 = setInterval(sayPrince,3000);
     // clearTimeout(a)
 
 
 
     document.querySelector("#stop").addEventListener("click",() =>{
-       clearTimeout(a) 
+       clearTimeout(a1) ;
        console.log("STOP");
        
     });
